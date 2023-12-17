@@ -1,0 +1,32 @@
+import java.util.*;
+class Prime_number
+{
+	public  static void main(String args[])
+	{
+		int flag=0;
+		System.out.println("ENTER A NUMBER TO CHECK PRImE nUMBER");
+		Scanner sc= new Scanner(System.in);
+		int num= sc.nextInt();
+		if (num==0|| num== 1)
+		{
+			System.out.println("NUMBER IS NOT PRIME NUMBER");
+			
+		}
+		else
+		{
+			for(int i=2;i< num/2 ;i++)
+			{
+				if(num%i==0)
+				{
+					System.out.println(num+ " IS NOT PRIme");
+					flag=1;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				System.out.println(num+" IS  PRIme Number");
+			}
+		}
+}
+}
